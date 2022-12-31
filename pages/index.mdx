@@ -1,6 +1,93 @@
 # Introduction
  
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+The X-Men API provides information about Marvel characters who have been or currently are members of the X-Men and affiliated teams. 
+
+Read the documentation to get started or learn how to contribute.
+
+Want to dive in? Access all characters at:
+
+`https://localhost:8000/api`
+
+## Documentation
+
+### What's in the data?
+
+Each object is a character with the following properties:
+
+| Property      | Value |
+| ----------- | ----------- |
+| name      | A string       |
+| aliases   | Array of aliases the character is known by        |
+| team affiliations      | Current or former teams the character has participated in       |
+| first appearances   | The character's first appearance in Marvel Comics        |
+| powers   | Array of character's abilities and powers        |
+
+
+### Endpoints:
+
+The following endpoints will let you access the data directly.
+
+`https://localhost:8000/api`
+
+To view all characters:
+
+`https://localhost:8000/api`
+
+To access a specific character:
+
+`https://localhost:8000/api/character`
+
+Replace character with the character you are searching. For example:
+
+`https://localhost:8000/api/storm`
+
+returns:
+
+```js
+"storm": {
+            "name": "Ororo Munroe",
+            "alias": [
+                "Storm",
+                "Ororo Iquadi T'Challa"
+            ],
+            "team affiliation": [
+                "X-Men",
+                "Avengers",
+                "Fantastic Four",
+                "Lady Liberators",
+                "Morlocks",
+                "X-Treme X-Men",
+                "Xavier Institute",
+                "Hellfire Club",
+                "X-Force",
+                "The Crew",
+                "Seven Brides of Set",
+                "X-Treme Sanctions Executive",
+                "Hounds",
+                "Horsemen of Salvation",
+                "Extinction Team",
+                "The Twelve",
+                "Tokyo Arena",
+                "Murder Circus",
+                "Secret Avengers (Civil War)",
+                "Quiet Council of Krakoa",
+                "Marauders"
+            ],
+            "first appearance": "Giant-Size X-Men #1",
+            "powers": [
+                "Expert tactician and thief",
+                "Psionic ability to manipulate weather patterns over vast area",
+                "Control atmospheric pressure",
+                "Temperature modification",
+                "Ecological empathy",
+                "Flight",
+                "Lightning manipulation",
+                "Immunity to lightning",
+                "Limited immunity to extreme cold and heat",
+                "Aerial adaptation"
+            ]
+        },
+        ```
 
 ## What is Nextra?
 
