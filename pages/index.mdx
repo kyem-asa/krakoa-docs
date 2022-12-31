@@ -1,5 +1,8 @@
-# Introduction
+# Welcome to Gardens of Krakoa
  
+
+Gardens of Krakoa is an X-Men API providing information about Marvel characters who have been or currently are members of the X-Men and affiliated teams. 
+
 The X-Men API provides information about Marvel characters who have been or currently are members of the X-Men and affiliated teams. 
 
 Read the documentation to get started or learn how to contribute.
@@ -12,38 +15,49 @@ Want to dive in? Access all characters at:
 
 ### What's in the data?
 
-Each object is a character with the following properties:
-
-| Property      | Value |
-| ----------- | ----------- |
-| name      | A string       |
-| aliases   | Array of aliases the character is known by        |
-| team affiliations      | Current or former teams the character has participated in       |
-| first appearances   | The character's first appearance in Marvel Comics        |
-| powers   | Array of character's abilities and powers        |
+An array of character objects
 
 
-### Endpoints:
+|  Property |  Type | Value  |
+|---|---|---|
+| full name| STRING  | Character's full nam  |
+| aliases  | ARRAY  |  Other names the character is known by |
+| team affiliations   | ARRAY  | Current or former teams the character joined |
+| first appearances | STRING | Character's first appearance in Marvel Comics
+| powers | ARRAY | Character's powers and abilities
 
-The following endpoints will let you access the data directly.
+### Endpoints
 
-`https://localhost:8000/api`
+The following endpoints provide access to the data.
 
-To view all characters:
+#### All data
 
-`https://localhost:8000/api`
+```js filename="endpoints.js" {3} copy
+https://xmen-api.cyclic.app/api
+```
 
-To access a specific character:
+#### All characters
 
-`https://localhost:8000/api/character`
+```js filename="endpoints.js" {3} copy
+https://xmen-api.cyclic.app/api
+```
 
-Replace character with the character you are searching. For example:
 
-`https://localhost:8000/api/storm`
+#### A specific character
 
-returns:
+```js filename="endpoints.js" {3} copy
+https://xmen-api.cyclic.app/character
+```
 
-```js
+
+Replace `character` with the character you are searching for. 
+
+```js filename="endpoints.js" {3} copy
+https://localhost:8000/api/storm
+```
+
+
+```js filename="storm.js" {0} copy
 "storm": {
             "name": "Ororo Munroe",
             "alias": [
@@ -88,11 +102,6 @@ returns:
             ]
         },
         ```
+## Need more help?
 
-## What is Nextra?
-
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+Check out the resources for more information on working with APIs.

@@ -1,23 +1,15 @@
-# Nextra Docs Template 
+# Gardens of Krakoa
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+This is the documentation for Gardens of Krakoa, an X-Men API providing information about Marvel characters who have been or currently are members of the X-Men and affiliated teams.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+Read the docs to get started or learn how to contribute.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+Want to dive in? Access all characters at:
 
-## Quick Start
+https://xmen-api.cyclic.app/api
 
-Click the button to clone this repository and deploy it on Vercel:
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+This documentation was created with [Nextra](https://nextra.site).
 
-## Local Development
+[**Live Site→**](https://nextra-docs-template.vercel.app)
 
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
