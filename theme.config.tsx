@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
 
   darkMode: true,
 
-  primaryHue: 360,
+  primaryHue: 57,
 }
 
 export default config
