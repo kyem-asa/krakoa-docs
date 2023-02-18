@@ -2,7 +2,7 @@ import { Callout } from 'nextra-theme-docs'
 import DocumentCount from "../components/DocumentCount";
  
 <Callout type="warning" emoji="⚠️">
-  This API is a work in progress.
+  This API is a work in progress. 
 </Callout>
 
 # Welcome to Gardens of Krakoa
@@ -15,26 +15,24 @@ Want to dive in? Access everything at:
 
 [Gardens of Krakoa](https://gardens-of-krakoa.cyclic.app/api/v1)
 
+## Documentation
+
 <Callout type="info" emoji="ℹ️">
   <DocumentCount />
 </Callout>
 
 
-
-## Documentation
-
-### What's in the data?
-
-The API currently includes 
+The API includes documents with these properties.
 
 
 |  Property |  Type | Value  |
 |---|---|---|
-| full name| STRING  | Character's full nam  |
-| aliases  | ARRAY  |  Other names the character is known by |
-| team affiliations   | ARRAY  | Current or former teams the character joined |
-| first appearances | STRING | Character's first appearance in Marvel Comics
-| powers | ARRAY | Character's powers and abilities
+| name | STRING | Common name or alias (ex. 'Storm')
+| fullName| STRING  | Full name (ex. 'Ororo Munroe') |
+| aliases  | ARRAY  |  Known aliases (ex. 'Storm)|
+| teamAffiliations   | ARRAY  | Current or former teams (ex. 'Hellfire Club'). |
+| firstAppearances | STRING | First appearance in Marvel Comics (ex. 'Giant-Size X-Men #1')
+| powers | ARRAY | Powers and abilities (ex. [ 'Ecological empathy',  'Flight'] )
 
 ### Endpoints
 
@@ -49,7 +47,7 @@ https://xmen-api.cyclic.app/api
 #### All characters
 
 ```js filename="endpoints.js" {3} copy
-https://xmen-api.cyclic.app/api
+https://gardens-of-krakoa.cyclic.app/api/v1
 ```
 
 
